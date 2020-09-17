@@ -1,0 +1,136 @@
+body{
+    background: #0B1026;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+h1{
+    font-weight: 800;
+}
+
+.header-card{
+    background: rgba(23, 26, 69, 0.81);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.header-card h1{
+    color: #E1DBFF;
+    font-size: 66px;
+    text-shadow: 0px 4px 4px #282074;
+    position: relative;
+    z-index: 1;
+}
+.header-card h1::before{
+    content: '';
+    position: absolute;
+    width: 142px;
+    height: 45px;
+    background: linear-gradient(179.09deg, #BF48EE 29.36%, rgba(255, 255, 255, 0) 99.22%), #FD47D8;
+    z-index: -1;
+    left: -10px;
+}
+
+.header-card h1::after{
+    content: '';
+    position: absolute;
+    width: 141px;
+    height: 41px;
+    background: linear-gradient(179.09deg, #51E9F2 29.36%, rgba(255, 255, 255, 0) 97.98%), #007D56;
+    z-index: -1;
+    right: 70px;
+    bottom: 0;
+}
+.header-card h3{
+    font-weight: 800;
+    color: #593BFF;
+    font-size: 33px;
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.25);
+}
+
+.header-card p{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.btn{
+    display: inline-block;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 50px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-blue-1{
+    background: #0496F8;
+    border: 1px solid #0496F8;
+    color: white;
+}
+
+
+/* Pajangan */
+.liquid1{
+    position: absolute;
+    top: -490px;
+}
+
+.lingkaran-1 {
+    position: absolute;
+    z-index: -1;
+    top: 420px;
+    left: -70px;
+}
+.lingkaran-2 {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -40px;
+}
+.lingkaran-3 {
+    position: absolute;
+    right: -80px;
+    top: -110px;
+}
+.lingkaran-4 {
+    position: absolute;
+    z-index: 2;
+    margin-left: 430px;
+    margin-top: 30px;
+}
+/* Akhir Pajangan */
+
+
+/* Responsive */
+
+@media (min-width: 576px) { 
+    
+ }
+
+
+@media (min-width: 768px) { 
+    
+ }
+
+
+@media (min-width: 992px) { 
+    .header-card h1{
+        font-size: 3.8rem;
+    }
+ }
+
+
+@media (min-width: 1200px) { 
+    .header-card h1{
+        font-size: 4.2rem;
+    }
+ }
