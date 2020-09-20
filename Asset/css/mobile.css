@@ -17,4 +17,32 @@
     .ajakan{
         font-size: 16px !important;
     }
+    .need{
+        padding: 0 24px;
+    }
+    .need h2{
+        font-size: 32px !important;
+    }
+    p{
+        font-size: 16px !important;
+    }
+    .need::before{
+        display: none !important;
+    }
+    .recruitment{
+        padding: 0 24px;
+    }
+    .recruitment h2{
+        font-size: 40px !important;
+    }
+    .recruitment img{
+        width: 100%;
+    }
+    .about{
+        padding: 0 24px;
+    }
+    .about h2{
+        font-size: 48px !important;
+        margin-bottom: 0 !important;
+    }
 }
