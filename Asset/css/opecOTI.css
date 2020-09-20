@@ -108,6 +108,9 @@ background: #e68840;
     position: relative;
     z-index: 1;
 }
+.faq h2{
+    font-size: 2.2rem;
+}
 .header-card h1::before , .req h2::before, .footer h2::before, .recruitment h2::before, .about h2::before, .benefit h2::before, .faq h2::before{
     content: '';
     position: absolute;
@@ -349,6 +352,9 @@ background: #e68840;
      .about h2::before , .about h2::after, .benefit h2::after, .benefit h2::before, .faq h2::after, .faq h2::before{
         display: none;
     }
+    .nav-link {
+        padding: .5rem .5rem;
+    }
 }
 
 @media (min-width: 576px) { 
@@ -369,6 +375,9 @@ background: #e68840;
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+    }
+    .nav-link {
+        padding: .5rem .5rem;
     }
  }
 
