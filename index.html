@@ -15,6 +15,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./Asset/css/opecOTI.css">
     <link rel="stylesheet" href="./Asset/css/mobile.css">
+    <link rel="stylesheet" href="./Asset/vendor/Magnific-Popup-master/dist/magnific-popup.css">
 </head>
 
 
@@ -29,8 +30,10 @@
             </div>
             <div class="card header-card px-5 py-5">
                 <div class="card-body row">
-                    <div class="col-xl-7">
-                        <h3>OmahTI</h3>
+                    <div class="col-xl-7 wrapper">
+                        <div class="brand mb-3">
+                            <img src="./Asset/img/logoPutih.png" alt="" class="img-fluid">
+                        </div>
                         <h1>OPEN RECRUITMENT</h1>
                         <p class="ajakan">Bergabung bersama kami untuk ikut berkontribusi di berbagai bidang IT. Berkontribusi lebih dan tingkatkan skillmu bersama kami, Gabung OmahTI!</p>
                         <a class="btn btn-blue-1" href="#">Tombol</a>
@@ -65,13 +68,19 @@
         </div>
         <div class="container-100">
             <div class="mb-4 text-center">
-                <img src="./Asset/img/Rectangle 7.svg" alt="" class="img-fluid">
+                <a href="./Asset/img/Rectangle 7.svg" class="popup">
+                    <img src="./Asset/img/Rectangle 7.svg" alt="" class="img-fluid">
+                </a>
             </div>
             <div class="mb-4 text-center">
-                <img src="./Asset/img/Rectangle 7.svg" alt="" class="img-fluid">
+                <a href="./Asset/img/Rectangle 7.svg" class="popup">
+                    <img src="./Asset/img/Rectangle 7.svg" alt="" class="img-fluid">
+                </a>
             </div>
             <div class="mb-4 text-center">
-                <img src="./Asset/img/Rectangle 7.svg" alt="" class="img-fluid">
+                <a href="./Asset/img/Rectangle 7.svg" class="popup">
+                    <img src="./Asset/img/Rectangle 7.svg" alt="" class="img-fluid">
+                </a>
             </div>
         </div>
     </section>
@@ -85,7 +94,9 @@
         <div class="container">
             <h2 class="mb-4">RECRUITMENT TIMELINE</h2>
             <p>the result will be announced in <span class="text-orange">x days</span> </p>
-            <img src="./Asset/img/timeline.png" alt="timeline" class="fluid">
+            <a href="./Asset/img/timeline.png" class="popup">
+                <img src="./Asset/img/timeline.png" alt="timeline" class="fluid">
+            </a>
         </div>
     </section>
     <section class="about mt-5">
@@ -197,6 +208,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <script src="./Asset/vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+    <script>
+        $('.popup').magnificPopup({
+            type:'image',
+            gallery: {
+                // options for gallery
+                enabled: true
+            },
+        });
+    </script>
 </body>
-
 </html>

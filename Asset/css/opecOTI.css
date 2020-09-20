@@ -249,7 +249,11 @@ background: #e68840;
     flex-direction: column;
 }
 
-
+.card-body .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /* Pajangan */
 
@@ -386,6 +390,12 @@ background: #e68840;
     .header-card h1::after, .req h2::after, .footer h2::after, .header-card h1::before , .req h2::before,
     .footer h2::before, .recruitment h2::before , .recruitment h2::after, .about h2::before , .about h2::after,
     .benefit h2::after, .benefit h2::before, .faq h2::after, .faq h2::before{
+        display: block;
+    }
+    .brand {
+        width: 140px;
+    }
+    .card-body .wrapper{
         display: block;
     }
  }
