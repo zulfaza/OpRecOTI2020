@@ -14,7 +14,28 @@ h2{
     font-weight: 800;
 }
 
-.header{
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #FD9B4E;
+border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #e68840;
+}
+
+.header, .recruitment{
     overflow: hidden;
     width: 100%;
     position: relative;
@@ -39,14 +60,55 @@ h2{
     border-radius: 25px;
 }
 
-.header-card h1, .req h2, .footer h2, .recruitment h2, .about h2{
+.faq h3{
+    color: #E1DBFF !important;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px #282074;
+    position: relative;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.faq .nav-pills .nav-link{
+    color: white;
+    position: relative;
+}
+.faq .nav-pills .nav-link::after{
+    content: '';
+    position: absolute;
+    color: white;
+    width: 0%;
+    height: 2px;
+    background-color: #FD9B4E;
+    left: 4px;
+    bottom: 0;
+    transition: width .3s;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: transparent;
+}
+.nav-pills .nav-link.active::after{
+    width: 100%;
+}
+.faq .nav-pills .nav-link:hover{
+    color: rgb(224, 224, 224);
+}
+
+.question-wrapper {
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.header-card h1, .req h2, .footer h2, .recruitment h2, .about h2,.benefit h2, .faq h2{
     color: #E1DBFF;
     font-size: 66px;
     text-shadow: 0px 4px 4px #282074;
     position: relative;
     z-index: 1;
 }
-.header-card h1::before , .req h2::before, .footer h2::before, .recruitment h2::before, .about h2::before{
+.header-card h1::before , .req h2::before, .footer h2::before, .recruitment h2::before, .about h2::before, .benefit h2::before, .faq h2::before{
     content: '';
     position: absolute;
     width: 142px;
@@ -56,7 +118,7 @@ h2{
     left: -10px;
 }
 
-.header-card h1::after, .req h2::after, .footer h2::after, .recruitment h2::after, .about h2::after{
+.header-card h1::after, .req h2::after, .footer h2::after, .recruitment h2::after, .about h2::after, .benefit h2::after, .faq h2::after{
     content: '';
     position: absolute;
     width: 141px;
@@ -153,18 +215,56 @@ h2{
     z-index: -1;
 }
 
+.about, .recruitment, .faq{
+    position: relative;
+}
+
+.faq-wrapper {
+    background: #0b1026d9;
+    border-radius: 20px;
+}
+
+.benefit .img{
+    width: 200px;
+    height: 200px;
+    background: black;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.benefit .benefit-item{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .footer {
     background: #0F183C;
     padding-top: 7rem;
     padding-bottom: 7rem;
 }
-.footer .container, .recruitment .container, .about .container{
+.footer .container, .recruitment .container, .about .container, .benefit .container{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+
+
 /* Pajangan */
+
+.lingkaran-ungu {
+    position: absolute;
+    z-index: -1;
+    bottom: 370px;
+    left: -130px;
+}
+
+.segitiga-ungu {
+    position: absolute;
+    margin-top: -140px;
+    left: -140px;
+}
 
 .text-orange{
     color: #FD9B4E;
@@ -197,6 +297,43 @@ h2{
     margin-left: 430px;
     margin-top: 30px;
 }
+
+.segienam-biru {
+    position: absolute;
+    right: 0;
+    bottom: -310px;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    background: url(../../Asset/img/1.png) no-repeat;
+    width: 409px;
+    height: 620px;
+    top: 320px;
+    left: -110px;
+}
+
+.recruitment::after {
+    content: '';
+    position: absolute;
+    background: url(../img/3.png);
+    width: 560px;
+    height: 1353px;
+    top: 0;
+    right: -20px;
+    z-index: -1;
+}
+.faq::after {
+    content: '';
+    position: absolute;
+    background: url(../img/2.png);
+    width: 710px;
+    height: 885px;
+    bottom: -70px;
+    right: 0;
+    z-index: -1;
+}
 /* Akhir Pajangan */
 
 
@@ -204,17 +341,22 @@ h2{
 
 @media (max-width:576px){
     .header-card h1::after, .req h2::after, .footer h2::after, .header-card h1::before , 
-    .req h2::before, .footer h2::before, .recruitment h2::before , .recruitment h2::after, .about h2::before , .about h2::after{
+    .req h2::before, .footer h2::before, .recruitment h2::before , .recruitment h2::after,
+     .about h2::before , .about h2::after, .benefit h2::after, .benefit h2::before, .faq h2::after, .faq h2::before{
         display: none;
     }
 }
 
 @media (min-width: 576px) { 
-    .header-card h1, .req h2, .footer h2{
+    .header-card h1, .req h2, .footer h2, .faq h2{
         font-size: 2.2rem;
     }
+    .faq h3{
+        font-size: 2.1rem;
+    }
     .header-card h1::after, .req h2::after, .footer h2::after, .header-card h1::before ,
-     .req h2::before, .footer h2::before, .recruitment h2::before , .recruitment h2::after, .about h2::before , .about h2::after{
+     .req h2::before, .footer h2::before, .recruitment h2::before , .recruitment h2::after,
+      .about h2::before , .about h2::after, .benefit h2::after, .benefit h2::before, .faq h2::after, .faq h2::before{
         display: none;
     }
     .container-100 {
@@ -228,8 +370,11 @@ h2{
 
 
 @media (min-width: 768px) { 
-    .header-card h1, .req h2, .footer h2, .recruitment h2{
+    .header-card h1, .req h2, .footer h2, .recruitment h2, .faq h2{
         font-size: 2.8rem;
+    }
+    .faq h3{
+        font-size: 2.2rem;
     }
  }
 
@@ -239,15 +384,19 @@ h2{
         font-size: 3.8rem;
     }
     .header-card h1::after, .req h2::after, .footer h2::after, .header-card h1::before , .req h2::before,
-    .footer h2::before, .recruitment h2::before , .recruitment h2::after, .about h2::before , .about h2::after{
+    .footer h2::before, .recruitment h2::before , .recruitment h2::after, .about h2::before , .about h2::after,
+    .benefit h2::after, .benefit h2::before, .faq h2::after, .faq h2::before{
         display: block;
     }
  }
 
 
 @media (min-width: 1200px) { 
-    .header-card h1, .req h2, .footer h2, .recruitment h2, .about h2{
+    .header-card h1, .req h2, .footer h2, .recruitment h2, .about h2, .benefit h2, .faq h2{
         font-size: 4.2rem;
+    }
+    .faq h3{
+        font-size: 2.6rem;
     }
     .container-100 {
         width: 100vw;
