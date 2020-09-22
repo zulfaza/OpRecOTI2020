@@ -233,12 +233,13 @@ background: #e68840;
     border-radius: 20px;
 }
 
-.benefit .img{
+.benefit .img {
     width: 200px;
     height: 200px;
-    background: black;
     border-radius: 25px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .benefit .benefit-item{
