@@ -87,6 +87,7 @@ background: #e68840;
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: transparent;
+    font-weight: 800;
 }
 .nav-pills .nav-link.active::after{
     width: 100%;
@@ -259,12 +260,55 @@ background: #e68840;
     flex-direction: column;
 }
 
+.container.logo-divisi-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
 .card-body .wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.credits a{
+    color: white;
+    transition: color .5s;
+}
+.credits a:hover{
+    color: #FD9B4E;
+    text-decoration: none;
+}
+.credits .himakom:hover {
+    color: #0043ff;
+}
+
+.credits h3{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.medsos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.medsos a {
+    color: #0b1026;
+    background: white;
+    padding: 1px 8px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    transition: border-radius .5s, color .3s;
+}
+
+.medsos a:hover{
+    border-radius: 0;
+}
 /* Pajangan */
 
 .lingkaran-ungu {
@@ -362,6 +406,7 @@ background: #e68840;
     .nav-link {
         padding: .5rem .5rem;
     }
+    
 }
 
 @media (min-width: 576px) { 

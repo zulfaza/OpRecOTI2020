@@ -45,4 +45,10 @@
         font-size: 48px !important;
         margin-bottom: 0 !important;
     }
+    .container.logo-divisi-wrapper {
+        width: 100%;
+    }
+    .credits h3 {
+        font-size: 1.6rem;
+    }
 }
